@@ -9,6 +9,8 @@ import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
+import java.net.URL;
+
 
 /**
  * This fragment will show "detail" for the selected Zodiac sign by loading a relevant
@@ -51,5 +53,7 @@ public class DetailFragment extends Fragment {
 
     public void updateWebView(String selectedSign) {
         //TODO - look up how to load a URL in a webview
+        String newWebView = URL_BEGINNING + selectedSign;
+        mWebView.loadUrl(newWebView);
     }
 }

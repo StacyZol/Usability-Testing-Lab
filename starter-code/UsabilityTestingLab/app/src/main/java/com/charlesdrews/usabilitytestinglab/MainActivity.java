@@ -24,6 +24,10 @@ public class MainActivity extends AppCompatActivity
         //TODO determine which layout file is being used (hint: is there an element in the large-screen
         //TODO  layout that's not in the regular layout?) and if the large screen layout is being used,
         //TODO  then load the detail fragment in MainActivity rather than using DetailActivity
+        if (mScreenIsLageEnoughForTwoPanes) {
+            mDetailFragment
+        }
+
     }
 
     @Override
